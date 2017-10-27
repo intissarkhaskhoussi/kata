@@ -12,4 +12,9 @@ class NumberDecoderTest extends FlatSpec
     {
       assert (new RomanNumber.NumberDecoder().Decode(2) == "II")
     }
+
+  "NumberDecoder" should "return III when it gets 3 as input" in
+    {
+      assert (new RomanNumber.NumberDecoder().Decode(3) == "III")
+    }
 }
