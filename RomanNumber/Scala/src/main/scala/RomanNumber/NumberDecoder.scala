@@ -5,11 +5,13 @@ class NumberDecoder
 {
   def Decode(number:Int) : String =
   {
-    number match{
-      case 1 => "I"
-      case 2 => "II"
-      case 3 => "III"
+    var it = number
+    var str = ""
+    while (it > 0){
+      str+="I"
+      it-=1
     }
+    str
   }
 }
 
