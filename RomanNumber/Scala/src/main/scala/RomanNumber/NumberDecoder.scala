@@ -12,3 +12,8 @@ class NumberDecoder
     }
   }
 }
+
+object NumberDecoder
+{
+  def apply(): NumberDecoder = new NumberDecoder()
+}
