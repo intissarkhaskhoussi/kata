@@ -8,8 +8,14 @@ class NumberDecoder
     var it = number
     var str = ""
     while (it > 0){
-      str+="I"
-      it-=1
+      if (it >=4){
+        str+="IV"
+        it-=4
+      }
+      else{
+        str+="I"
+        it-=1
+      }
     }
     str
   }
