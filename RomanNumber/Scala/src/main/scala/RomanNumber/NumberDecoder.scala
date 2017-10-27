@@ -5,10 +5,10 @@ class NumberDecoder
 {
   def Decode(number:Int) : String =
   {
-    if (number == 1)
-    {
-      return "I"
+    number match{
+      case 1 => "I"
+      case 2 => "II"
+      case 3 => "III"
     }
-    "II"
   }
 }
