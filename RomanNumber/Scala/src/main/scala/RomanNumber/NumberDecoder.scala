@@ -8,13 +8,19 @@ class NumberDecoder
     var it = number
     var str = ""
     while (it > 0){
-      if (it >=4){
-        str+="IV"
-        it-=4
-      }
-      else{
-        str+="I"
-        it-=1
+      it match{
+        case i:Int if (i>=5) =>{
+          str+="V"
+          it-=5
+        }
+        case i:Int if (i>=4) =>{
+          str+="IV"
+          it-=4
+        }
+        case i:Int if (i<=3) =>{
+          str+="I"
+          it-=1
+        }
       }
     }
     str
