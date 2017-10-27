@@ -81,49 +81,31 @@ class NumberDecoderTest extends FlatSpec
 
   "NumberDecoder" should "return XC when it gets 90 as input" in
     {
-      val some = NumberDecoder().Decode(90)
-      assert (some.contains("XC"))
-      val Some(v) = some
-      assert (v == "XC")
+      assert (NumberDecoder().Decode(90) == "XC")
     }
 
   "NumberDecoder" should "return C when it gets 100 as input" in
     {
-      val some = NumberDecoder().Decode(100)
-      assert (some.contains("C"))
-      val Some(v) = some
-      assert (v == "C")
+      assert (NumberDecoder().Decode(100) == "C")
     }
 
   "NumberDecoder" should "return CD when it gets 400 as input" in
     {
-      val some = NumberDecoder().Decode(400)
-      assert (some.contains("CD"))
-      val Some(v) = some
-      assert (v == "CD")
+      assert (NumberDecoder().Decode(400) == "CD")
     }
 
   "NumberDecoder" should "return D when it gets 500 as input" in
     {
-      val some = NumberDecoder().Decode(500)
-      assert (some.contains("D"))
-      val Some(v) = some
-      assert (v == "D")
+      assert (NumberDecoder().Decode(500) == "D")
     }
 
   "NumberDecoder" should "return CM when it gets 900 as input" in
     {
-      val some = NumberDecoder().Decode(900)
-      assert (some.contains("CM"))
-      val Some(v) = some
-      assert (v == "CM")
+      assert (NumberDecoder().Decode(900) == "CM")
     }
 
   "NumberDecoder" should "return M when it gets 1000 as input" in
     {
-      val some = NumberDecoder().Decode(1000)
-      assert (some.contains("M"))
-      val Some(v) = some
-      assert (v == "M")
+      assert (NumberDecoder().Decode(1000) == "M")
     }
 }
