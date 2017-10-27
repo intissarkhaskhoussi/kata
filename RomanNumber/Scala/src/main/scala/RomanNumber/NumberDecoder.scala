@@ -1,30 +1,30 @@
 
 package RomanNumber
 
+import scala.annotation.tailrec
+
 class NumberDecoder
 {
   def Decode(number:Int) : String =
   {
-    var it = number
-    var str = ""
-    while (it > 0){
-      it match{
-        case i:Int if (i>=5) =>{
-          str+="V"
-          it-=5
-        }
-        case i:Int if (i>=4) =>{
-          str+="IV"
-          it-=4
-        }
-        case i:Int if (i<=3) =>{
-          str+="I"
-          it-=1
-        }
+    @tailrec
+    def recDecode(it:Int, partialRoman:String) : (String,Int)=
+    {
+      if (it == 0)
+      {
+        return (partialRoman,0)
       }
+      val (str,i) = ConversionData.findFirstInferior(it)
+      recDecode(it-i, partialRoman+str)
     }
-    str
+    recDecode(number,"")._1
   }
+}
+
+object ConversionData{
+  val UnitValue = List(("V", 5), ("IV", 4), ("I",1))
+
+  def findFirstInferior(number:Int) : (String,Int) = UnitValue.filter(e => e._2 <=number).head
 }
 
 object NumberDecoder
