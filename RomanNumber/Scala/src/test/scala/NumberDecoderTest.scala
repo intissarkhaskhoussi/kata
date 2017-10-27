@@ -18,4 +18,9 @@ class NumberDecoderTest extends FlatSpec
     {
       assert (NumberDecoder().Decode(3) == "III")
     }
+
+  "NumberDecoder" should "return IV when it gets 4 as input" in
+    {
+      assert (NumberDecoder().Decode(4) == "IV")
+    }
 }
