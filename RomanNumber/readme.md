@@ -15,4 +15,10 @@ Un nombre écrit en chiffres romains se lit de gauche à droite. En première ap
 |D|500|Un ⊢ encadré (c.-à-d. ⊢ et Ↄ superposés) devenu D, confondu ensuite avec D. Le signe IↃ signifie aussi 500.|
 |M|1 000|Un X entouré ou encadré qui, passant par plusieurs formes, a été écrit ⊕ ou comme un phi grec Φ, puis est devenu CIƆ et ↀ ; toutes ces formes ont finalement été confondues avec M, d’autant plus que 1 000 se dit mille en latin.|
 
+# Solutions disponibles
 
+Les solutions sont disponibles dans les langages suivants :
+* Scala
+
+La solution en Scala ets disponible sur la branche :
+* Solution_RomanNumber_Scala_Simple_TDD.
