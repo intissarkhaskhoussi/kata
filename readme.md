@@ -63,4 +63,11 @@ Humble Design.
 
 *Langages : Tous langages (Java déjà fait).*
 
+## Ressources utiles
+
+* Le github de [Emily Bache](https://github.com/emilybache/)
+* Le site [codingdojo](http://www.codingdojo.org/) 
+* Le site [codekata](http://codekata.pragprog.com).
+* Le site de [la communauté F#](https://github.com/c4fsharp)
+
 Contact: kata@meritis.fr
